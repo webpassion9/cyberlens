@@ -1,0 +1,72 @@
+//- --------------------------------------------------------------------------
+//- Projects
+//- --------------------------------------------------------------------------
+
+.projects {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	@include breakpoint(lg) {
+		padding-top: 95px;	
+		padding-bottom: 115px;
+	}
+	.row {
+		.col {
+			margin-bottom: 30px;
+			.projects {
+				&__item {
+					min-height: 100%;
+				}
+			}
+		}
+	}
+
+	&__item {
+		padding: 32px 33px 28px 31px;
+		border-radius: 5px;
+		border: solid 1px $gray-light3;
+		color: $gray;
+		margin-bottom: 30px;
+		display: flex;
+		flex-direction: column;
+		transition: .25s;
+		&-logo {
+			height: 42px;
+			display: flex;
+			align-items: center;
+			margin-bottom: 27px;
+		}
+		&-title {
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 10px;
+			font-weight: 600;
+
+			transition: .25s;
+		}
+		&-desc {
+			font-size: 15px;
+			line-height: 24px;
+			color: $gray-light2;
+			min-height: 72px;
+		}
+		&-category {
+			font-size: 12px;
+			line-height: 16px;
+			color: rgba($gray-light2, .6);
+			margin-top: auto;
+		}
+
+		&:hover {
+			box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.04);
+			text-decoration: none;
+			.projects {
+				&__item {
+					&-title {
+						color: $orange;
+					}
+				}
+			}
+		}
+	}
+
+}

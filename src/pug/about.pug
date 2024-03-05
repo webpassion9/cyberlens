@@ -1,0 +1,197 @@
+extends includes/_app
+
+block head
+
+	- var title = 'About - Cyberlens';
+	- var pageClass = 'is-page-main';
+
+
+block main
+	
+	.top-page
+		.container
+			.row
+				.col-lg-8.offset-lg-2.text-center
+			
+					.title-head About
+
+					h2 Our Mission.
+
+					.text-desc Harnessing the power of data, AI and human knowledge
+						br
+						| to protect society in a cyber-physical world.
+
+	.text-center.about-img-team
+		img(src="images/team.jpg", alt="" srcset="images/team@2x.jpg 2x")
+
+	.section-default
+		.container
+			.row.info-block.info-block--about
+				.col-md-6
+					h2 Cyberlens’ Story
+					.text-desc
+						p Cyberlens emerged from a vision to create truly self-aware cybersecurity capabilities for yesterday and today’s systems so that they can proactively self-defend against sophisticated threats in an increasingly connected cyber-physical world. Through its founders ground-breaking research in AI-driven cybersecurity, the concept of self-awareness, where a system “understands self”, “learns” how to detect threats, and “analyses” how to mitigate them, led to the conception of Cyberlens’ core software innovations in cybersecurity threat modelling, cyber-physical intrusion detection and cybersecurity control decision-support.
+						p Today, Cyberlens participates in innovative and large-scale research and development projects, tackling some of the world’s most challenging cybersecurity challenges, where it contributes, integrates and further develops the capabilities of its three existing software prototypes. Cyberlens is also hard at work developing, and oncourse to release, the world’s first “self-aware” threat detection, response and recovery endpoint platform for robots and autonomous systems.
+				.col-md-6.info-block__img
+					img(src="images/office-work.jpg", alt="" srcset="images/office-work@2x.jpg 2x")
+	.section-default.section-white.team
+
+		.container
+			.row
+				.col-lg-8.offset-lg-2.text-center
+					h2 Our People
+					.text-desc Over the last 15 years, our experts have helped organisations implement next-generation cybersecurity capabilities across both government and private sectors, as well having produced world-leading research.
+		.tabs-menu
+			.container
+				ul.tabs-menu__list
+					li.current
+						a(href="#") Leadership Team
+					li
+						a(href="#") Advisory Board
+		.container.team__items
+			.row.team__items-row
+				.col.col-12.col-sm-6.col-md-4
+					a(href="#popup-team-1" data-fancybox).team__item
+						.team__item-img
+							img(src="images/team-1.jpg", alt="" srcset="images/team-1@2x.jpg 2x")
+							.team__item-full-overlay Full bio
+						div
+							h4 Victor Pacheco
+							.team__item-desc CEO / CTO and Co-founder
+				.col.col-12.col-sm-6.col-md-4
+					a(href="#").team__item
+						.team__item-img
+							img(src="images/team-2.jpg", alt="" srcset="images/team-2@2x.jpg 2x")
+							.team__item-full-overlay Full bio
+						div
+							h4 VSara Scholz
+							.team__item-desc CTO and Co-founder
+				.col.col-12.col-sm-6.col-md-4
+					a(href="#").team__item
+						.team__item-img
+							img(src="images/team-3.jpg", alt="" srcset="images/team-3@2x.jpg 2x")
+							.team__item-full-overlay Full bio
+						div
+							h4 Isak Johannesson
+							.team__item-desc Global Head of Sales
+				.col.col-12.col-sm-6.col-md-4
+					a(href="#").team__item
+						.team__item-img
+							img(src="images/team-4.jpg", alt="" srcset="images/team-4@2x.jpg 2x")
+							.team__item-full-overlay Full bio
+						div
+							h4 Pablo Cambeiro
+							.team__item-desc Head of Delivery
+				.col.col-12.col-sm-6.col-md-4
+					a(href="#").team__item
+						.team__item-img
+							img(src="images/team-5.jpg", alt="" srcset="images/team-5@2x.jpg 2x")
+							.team__item-full-overlay Full bio
+						div
+							h4 Nick Evans
+							.team__item-desc Head of Customer Success
+				.col.col-12.col-sm-6.col-md-4
+					a(href="#").team__item
+						.team__item-img
+							img(src="images/team-6.jpg", alt="" srcset="images/team-6@2x.jpg 2x")
+							.team__item-full-overlay Full bio
+						div
+							h4 Kendasha Wood
+							.team__item-desc Director of Intelligence
+				.col.col-12.col-sm-6.col-md-4
+					a(href="#").team__item
+						.team__item-img
+							img(src="images/team-7.jpg", alt="" srcset="images/team-7@2x.jpg 2x")
+							.team__item-full-overlay Full bio
+						div
+							h4 Vikentiy Chaykovsky
+							.team__item-desc CHead of Operations and HR
+				.col.col-12.col-sm-6.col-md-4
+					a(href="#").team__item
+						.team__item-img
+							img(src="images/team-8.jpg", alt="" srcset="images/team-8@2x.jpg 2x")
+							.team__item-full-overlay Full bio
+						div
+							h4 Luis Calvillo
+							.team__item-desc Director of Strategic Partnerships
+				.col.col-12.col-sm-6.col-md-4
+					a(href="#").team__item
+						.team__item-img
+							img(src="images/team-9.jpg", alt="" srcset="images/team-9@2x.jpg 2x")
+							.team__item-full-overlay Full bio
+						div
+							h4 Harinder Mondi
+							.team__item-desc Financial Controller
+
+	.section-default.work-with-us
+		.container
+			h2.h2-mod-medium Work with us
+			.row.work-with-us__row
+				.col-12.col-md-6.col-lg-4
+					.innovations__item
+						.innovations__item-icon
+							+sprite('search')
+						h3 Research and Development
+						.text-desc
+							p Cyberlens are a highly experienced and expert SME in large scale EU-funded projects, with a track record for delivering against the most complex technological usecases. If you are looking for a highly innovative SME in cybersecurity for participation or partnership in a specific call, please contact us.
+				.col-12.col-md-6.col-lg-4
+					.innovations__item
+						.innovations__item-icon
+							+sprite('early-adopters-and-pilot-clients')
+						h3 Early adopters and pilot clients
+						.text-desc
+							p We are currently developing a next-generation threat detection and response platform for robots and other autonomous systems in industry 4.0, healthcare, consumer sectors and other emerging markets and industries. If you would like to experience first-hand our state-of-the-art cybersecurity solution for your operational technology needs, then please contact us.
+				.col-12.col-md-6.col-lg-4
+					.innovations__item
+						.innovations__item-icon
+							+sprite('integration')
+						h3 Integration and customisation
+						.text-desc
+							p Cybersecurity products tend to offer solutions which meet the needs of industry consumers, but rarely address the more complex requirements of system manufacturers who require built-in cybersecurity capabilities for their own products. If you are interested in discovering how our products can be customised and integrated into your product ecosystem, please contact us.
+
+			div
+				a(href="#popup-contact" data-fancybox).link-more Contact Us
+					+sprite('arrow-right-circle-orange')
+
+	.section-default.contacts
+		.container
+			h2 Where to find us
+			.contacts__block
+				.contacts__block-title United Kingdom
+				.text-desc 18 King William Street 
+					br
+					| Candlewick,
+					br
+					| London, EC4N 7B
+				div
+					a(href="#").link-get Get Directions ↗
+			.contacts__block
+				.contacts__block-title Netherlands
+				.text-desc Kastanjelaan 400,
+					br
+					| Eindhoven, 5616 LZ
+				div
+					a(href="#").link-get Get Directions ↗
+		.contacts__img.is-lg-visible
+			img(src="images/earth-img-gray.png", alt="" srcset="images/earth-img-gray@2x.png 2x")
+			.map-location.map-location--pos1
+				.map-location__dot
+				.map-location__main
+					.map-location__main-title United Kingdom
+					.map-location__main-info 18 King William Street 
+						br
+						| Candlewick,
+						br
+						| London, EC4N 7B
+
+			.map-location.map-location--pos2
+				.map-location__dot
+				.map-location__main
+					.map-location__main-title United Kingdom
+					.map-location__main-info 18 King William Street 
+						br
+						| Candlewick,
+						br
+						| London, EC4N 7B
+
+

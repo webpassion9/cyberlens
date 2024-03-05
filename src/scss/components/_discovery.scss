@@ -1,0 +1,65 @@
+//- --------------------------------------------------------------------------
+//- Discovery
+//- --------------------------------------------------------------------------
+
+
+.discovery-top {
+	text-align: center;
+	padding-bottom: 30px;
+	@include breakpoint(lg) {
+		padding-bottom: 100px;
+	}
+	&__img {
+		margin-bottom: 60px;
+		position: relative;
+		z-index: 5;
+		&:after {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 100%;
+			transform: translateX(-50%);
+			width: calc(100% + 30px);
+			height: 408px;
+			background: url(../images/shadow.png) no-repeat center 0;
+			z-index: -1;
+			pointer-events: none;
+		}
+	}
+}
+
+//-----
+
+.discovery-blocks {
+	padding-top: 60px;
+	h2 {
+		margin-bottom: 40px;
+		text-align: center;
+		@include breakpoint(lg) {
+			margin-bottom: 110px;
+		}
+	}
+	.info-block {
+		margin-bottom: 50px;
+		@include breakpoint(lg) {
+			margin-bottom: 160px;
+		
+		}
+		&__main {
+			@include breakpoint(lg) {
+				padding-right: 75px;
+			}
+		}
+		&--reverse {
+			.info-block {
+				&__main {
+					@include breakpoint(lg) {
+						padding-left: 75px;
+					}
+				}
+			}
+
+		}
+	}
+}
+

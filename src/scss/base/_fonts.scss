@@ -1,0 +1,60 @@
+// --------------------------------------------------------------------------
+// Fonts
+// --------------------------------------------------------------------------
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-Medium.eot');
+    src: local('Open Sauce One Medium'), local('OpenSauceOne-Medium'),
+        url('../fonts/OpenSauceOne-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSauceOne-Medium.woff2') format('woff2'),
+        url('../fonts/OpenSauceOne-Medium.woff') format('woff'),
+        url('../fonts/OpenSauceOne-Medium.ttf') format('truetype'),
+        url('../fonts/OpenSauceOne-Medium.svg#OpenSauceOne-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-SemiBold.eot');
+    src: local('Open Sauce One SemiBold'), local('OpenSauceOne-SemiBold'),
+        url('../fonts/OpenSauceOne-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSauceOne-SemiBold.woff2') format('woff2'),
+        url('../fonts/OpenSauceOne-SemiBold.woff') format('woff'),
+        url('../fonts/OpenSauceOne-SemiBold.ttf') format('truetype'),
+        url('../fonts/OpenSauceOne-SemiBold.svg#OpenSauceOne-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sauce One';
+    src: url('../fonts/OpenSauceOne-Bold.eot');
+    src: local('Open Sauce One Bold'), local('OpenSauceOne-Bold'),
+        url('../fonts/OpenSauceOne-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSauceOne-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSauceOne-Bold.woff') format('woff'),
+        url('../fonts/OpenSauceOne-Bold.ttf') format('truetype'),
+        url('../fonts/OpenSauceOne-Bold.svg#OpenSauceOne-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.eot');
+    src: local('Inter Regular'), local('Inter-Regular'),
+        url('../fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Inter-Regular.woff2') format('woff2'),
+        url('../fonts/Inter-Regular.woff') format('woff'),
+        url('../fonts/Inter-Regular.ttf') format('truetype'),
+        url('../fonts/Inter-Regular.svg#Inter-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

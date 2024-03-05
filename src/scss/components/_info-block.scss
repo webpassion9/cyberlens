@@ -1,0 +1,89 @@
+// --------------------------------------------------------------------------
+// Info block
+// --------------------------------------------------------------------------
+
+.info-block {
+	align-items: center;
+	@include breakpointMax(md) {
+		flex-direction: column-reverse;
+	}
+	&__bar {
+		display: flex;
+		align-items: center;
+		margin-bottom: 35px;
+	}
+	&__img {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+		@include breakpoint(md) {
+			justify-content: flex-end;
+			margin-bottom: 0;
+		}
+
+		&--border-radius {
+			img {
+				border-radius: 7px;
+			}
+		}
+	}
+	&--reverse {
+		@include breakpoint(md) {
+			flex-direction: row-reverse;
+			.info-block__img {
+				justify-content: flex-start;
+			}
+		}
+	}
+
+
+	&--about {
+		.info-block {
+			&__img {
+				@include breakpointMax(md) {
+					max-height: 300px;
+					overflow: hidden;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					img {
+						object-fit: cover;
+						width: 100%;
+						height: 100%;
+					}
+				
+				}
+			}
+		}
+	}
+
+	.title-head {
+		margin-bottom: 25px;
+		@include breakpoint(lg) {
+			margin-bottom: 45px;
+		}
+	}
+
+	h2 {
+		margin-bottom: 20px;
+		@include breakpoint(lg) {
+			margin-bottom: 30px;
+		
+		}
+
+		@include breakpointMax(lg) {
+			font-size: 23px;
+			font-weight: 600;
+			line-height: 1.39;
+			letter-spacing: -0.15px;
+		
+		}
+	}
+
+	.text-desc {
+		margin-bottom: 45px;
+		&:last-child {
+			margin-bottom: 0;	
+		}
+	}
+}

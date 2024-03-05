@@ -1,0 +1,122 @@
+extends includes/_app
+
+block head
+
+	- var title = 'Article - Cyberlens';
+	- var pageClass = 'is-page-main';
+
+
+block main
+	
+	.article__top
+		.container
+
+			.news__item-bar
+				a(href="#").news-category Whitepaper
+				span.news__item-date 10 March 2021
+			h2 SDN-microSENSE project kick-off meeting in Seville, Spain
+			.article__posted
+				.article__posted-img
+					img(src="images/author-photo.png", alt="" srcset="images/author-photo@2x.png 2x")
+				div
+					h6 Posted by
+					h5 Leo Knight
+	.article__top-img
+		.container
+			img(src="images/article-img-1.jpg", alt="" srcset="images/article-img-1@2x.jpg 2x")
+
+	.article__main.section-white
+		.container
+			.article__main-text
+				p Hacks and data leaks have become so commonplace these days that most of us are no longer shocked by massive attacks that leave companies scrambling to pick up the pieces. But the fact that we almost expect hacks to happen doesn’t mean that we should become complacent when it comes to security.
+				p If we believe the hype, 
+					a(href="#") SASE
+					|  – or Secure Access Service Edge – may be the answer.
+				p There are several factors at play, helping to stir up the need for better security solutions. Much of the impetus for this change revolves around the push toward the cloud – both as a place to store data and as a means to access applications and services. Yes, we’re moving to the cloud, but where does SASE fit into the picture?
+				h3 No more status quo
+				p The past year has put a lot of focus on IT teams and where they have either succeeded or failed to provide continuity to employees. Many of us have been working from home for the better part of a year, but we still need to get our jobs done. We still want to have the same fast, reliable connection to apps and services that we enjoyed at the office. And we still need to be safe while doing it, regardless of the Wi-Fi or cellular network we’re likely to be using.
+				p As a result, SASE has become a rallying cry for the future of cloud-based security. Whether it’s a Firewall-as-a-Service offering, a Software Defined Perimeter (
+					a(href="#") SDP
+					|) built on a zero-trust architecture, experience monitoring, or a variety of other cloud-powered network and security solutions, the SASE concept points to the future of secure remote access for an increasingly mobile and distributed workforce.
+				h4 Enhanced user experience
+				p Next on the list is user experience. Back when most users were still inside a protected corporate network with applications running in a data center, it was far easier for IT teams to manage and positively influence the user experience. That was largely thanks to the controlled environment and great network visibility. Now, however, with applications distributed across multiple cloud environments and users literally being outside the corporate perimeter, using a legacy VPN to access these applications makes significantly less sense.
+				h4 Lower risk
+				p Next on the list is user experience. Back when most users were still inside a protected corporate network with applications running in a data center, it was far easier for IT teams to manage and positively influence the user experience. That was largely thanks to the controlled environment and great network visibility. 
+				ul
+					li Next on the list is user experience. Back when most users were still inside a protected corporate network with applications running in a data center, it was far easier for IT teams to manage and positively influence the user experience.
+					li That was largely thanks to the controlled environment and great network visibility. Now, however, with applications distributed across multiple cloud environments and users literally being outside the corporate perimeter
+					li Using a legacy VPN to access these applications makes significantly less sense.
+				img(src="images/article-img-2.jpg", alt="" srcset="images/article-img-2@2x.jpg 2x")
+				h3 No more status quo
+				p The past year has put a lot of focus on IT teams and where they have either succeeded or failed to provide continuity to employees. Many of us have been working from home for the better part of a year, but we still need to get our jobs done. We still want to have the same fast, reliable connection to apps and services that we enjoyed at the office. And we still need to be safe while doing it, regardless of the Wi-Fi or cellular network we’re likely to be using.
+				p As a result, SASE has become a rallying cry for the future of cloud-based security. Whether it’s a Firewall-as-a-Service offering, a Software Defined Perimeter (
+					a(href="#") SDP
+					|) built on a zero-trust architecture, experience monitoring, or a variety of other cloud-powered network and security solutions, the SASE concept points to the future of secure remote access for an increasingly mobile and distributed workforce.
+				blockquote
+					p “Whether it’s a Firewall-as-a-Service offering built on a zero-trust architecture, experience monitoring, or a variety of other cloud-powered network and security solutions, the SASE concept points to the future of secure remote access for an increasingly mobile and distributed workforce.”
+					h5 Ben Chestnut
+					h6 Co-founder and CEO, Mailchimp
+				p The past year has put a lot of focus on IT teams and where they have either succeeded or failed to provide continuity to employees. Many of us have been working from home for the better part of a year, but we still need to get our jobs done. We still want to have the same fast, reliable connection to apps and services that we enjoyed at the office. And we still need to be safe while doing it, regardless of the Wi-Fi or cellular network we’re likely to be using.
+				p As a result, SASE has become a rallying cry for the future of cloud-based security. Whether it’s a Firewall-as-a-Service offering, a Software Defined Perimeter (SDP) built on a zero-trust architecture, experience monitoring, or a variety of other cloud-powered network and security solutions, the SASE concept points to the future of secure remote access for an increasingly mobile and distributed workforce.
+			.article__bottom.row
+				.col-12.col-md-6
+					.article__posted
+						.article__posted-img
+							img(src="images/author-photo.png", alt="" srcset="images/author-photo@2x.png 2x")
+						div
+							h6 Posted by
+							h5 Leo Knight
+				.col-12.col-md-6.text-right-md
+					.article__share
+						span.article__share-label Share:
+						ul.socials
+							li
+								a(href="#" target="_blank").btn
+									+sprite('linkedin')
+							li
+								a(href="#" target="_blank").btn
+									+sprite('twitter')
+							li
+								a(href="#" target="_blank").btn
+									+sprite('facebook')
+
+	.news.section-default
+		.container
+			h2.h2-mod-medium Similar Resources
+			.row.news__row
+				.col-12.col-md-6.col-lg-4
+					.news__item
+						a(href="#").news__item-img
+							img(src="images/news-img-1.jpg", alt="" srcset="images/news-img-1@2x.jpg 2x")
+						.news__item-main
+							.news__item-bar
+								a(href="#").news-category Whitepaper
+								span.news__item-date 10 March 2021
+							h4
+								a(href="#") SDN-microSENSE project kick-off meeting in Seville, Spain
+							.news__item-desc
+								p CyberLens participated to the kick-off meeting of SDN-microSENSE project held in Seville on 4-5 June 2019, being actively engaged to the development of a secure, resilient to cyber attacks, privacy-enabled and protected ...
+				.col-12.col-md-6.col-lg-4
+					.news__item
+						a(href="#").news__item-img
+							img(src="images/news-img-2.jpg", alt="" srcset="images/news-img-2@2x.jpg 2x")
+						.news__item-main
+							.news__item-bar
+								a(href="#").news-category Whitepaper
+								span.news__item-date 10 March 2021
+							h4
+								a(href="#") SDN-microSENSE project kick-off meeting in Seville, Spain
+							.news__item-desc
+								p CyberLens participated to the kick-off meeting of SDN-microSENSE project held in Seville on 4-5 June 2019, being actively engaged to the development of a secure, resilient to cyber attacks, privacy-enabled and protected ...
+				.col-12.col-md-6.col-lg-4
+					.news__item
+						a(href="#").news__item-img
+							img(src="images/news-img-3.jpg", alt="" srcset="images/news-img-3@2x.jpg 2x")
+						.news__item-main
+							.news__item-bar
+								a(href="#").news-category Whitepaper
+								span.news__item-date 10 March 2021
+							h4
+								a(href="#") SDN-microSENSE project kick-off meeting in Seville, Spain
+							.news__item-desc
+								p CyberLens participated to the kick-off meeting of SDN-microSENSE project held in Seville on 4-5 June 2019, being actively engaged to the development of a secure, resilient to cyber attacks, privacy-enabled and protected ...

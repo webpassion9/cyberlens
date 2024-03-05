@@ -1,0 +1,139 @@
+// --------------------------------------------------------------------------
+// States
+// --------------------------------------------------------------------------
+
+
+.noselect {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+// ------
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+	&-lg {
+		@include breakpoint(lg) {
+			text-align: right;
+		
+		}
+	}
+	&-md {
+		@include breakpoint(md) {
+			text-align: right;
+		
+		}
+	}
+}
+
+.text-nowrap {
+	white-space: nowrap;
+}
+
+
+// ------
+
+.text-green {
+	color: #159E24;
+}
+
+.text-red {
+	color: #8A0502;
+}
+
+.text-yellow {
+	color: #83653D;
+}
+
+.text-grey {
+	color: #616781;
+}
+
+// ------
+
+.row-offset-10 {
+	margin: 0 -5px;
+	& > [class^="col-"] {
+		padding: 0 5px;
+	}
+}
+
+
+// -----
+
+.is-hidden {
+	display: none;
+}
+
+.is-sm-visible {
+	@include breakpointMax(sm) {
+		display: none;
+	}
+}
+
+.is-md-visible {
+	@include breakpointMax(md) {
+		display: none;
+	}
+}
+
+.is-lg-visible {
+	@include breakpointMax(lg) {
+		display: none;
+	}
+}
+
+.is-xl-visible {
+	@include breakpointMax(xl) {
+		display: none;
+	}
+}
+
+// -----
+
+.is-xs-hidden {
+	@include breakpoint(sm) {
+		display: none;
+	}
+}
+
+.is-sm-hidden {
+	@include breakpoint(sm) {
+		display: none;
+	}
+}
+
+.is-md-hidden {
+	@include breakpoint(md) {
+		display: none;
+	}
+}
+
+.is-lg-hidden {
+	@include breakpoint(lg) {
+		display: none;
+	}
+}
+
+.is-xl-hidden {
+	@include breakpoint(xl) {
+		display: none;
+	}
+}
+
+//-----
+.is-menu-active {
+	overflow: hidden;
+}

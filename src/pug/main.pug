@@ -1,0 +1,105 @@
+extends includes/_app
+
+block head
+
+	- var title = 'Home - Cyberlens';
+	- var pageClass = 'is-page-main';
+
+
+block main
+	
+	.start-slide
+		.container
+			
+			h1 Sense Threats.
+				br
+				| Stay in Control. 
+			.start-slide__subtitle Cyber-physical Threat Detection & Response for Industry 4.0
+			div
+				a(href="#").btn.btn-default Learn More
+
+	.container
+		.news-feed
+			.row.news-feed__row
+				.col-lg-3.news-feed__bar
+					h2.h2-mod-medium Latest News
+					div
+						a.btn.btn-arrow.news-feed__main-btn-prev
+							+sprite('arrow-left')
+						a.btn.btn-arrow.news-feed__main-btn-next
+							+sprite('arrow-right')
+				.col-lg-9
+					.news-feed__main
+						a(href="#").news-feed__item
+							.title-head What Gartner Says
+							h4 Why they say network detection and response is key to defend against supply chain attacks.
+						a(href="#").news-feed__item
+							.title-head EMA Report
+							h4 Learn why prevention tools of the past are ineffective when it comes to the cloud.
+						a(href="#").news-feed__item
+							.title-head What Gartner Says
+							h4 Why they say network detection and response is key to defend against supply chain attacks.
+						a(href="#").news-feed__item
+							.title-head EMA Report
+							h4 Learn why prevention tools of the past are ineffective when it comes to the cloud.
+
+	.about
+		.container
+			.row.info-block.about__item
+				.col-md-6
+					h2 Threat Detection and Response in a Cyber-physical World
+					.text-desc
+						p Cyberlens delivers next generation threat detection and response technologies via our research projects and product development, for both existing and emerging industry sectors, where digital transformation requires equally robust cybersecurity protection. 
+					a(href="#").link-more Learn More
+						+sprite('arrow-right-circle-orange')
+				.col-md-6.info-block__img
+					img(src="images/radar.svg", alt="")
+			.row.info-block.info-block--reverse.about__item
+				.col-md-6
+					h2 Cyber-physical Detection & Response
+					.text-desc
+						p Today, Cyberlens participates in innovative and large-scale research and development projects, tackling some of the world’s most challenging cybersecurity challenges, where it contributes, integrates and further develops the capabilities of its three existing software prototypes.
+					a(href="#").link-more Learn More
+						+sprite('arrow-right-circle-orange')
+				.col-md-6.info-block__img
+					img(src="images/galaxy.svg", alt="")
+	.news.section-white.section-default
+		.container
+			h2 Featured Resources
+			.row.news__row
+				.col-12.col-md-6.col-lg-4
+					.news__item
+						a(href="#").news__item-img
+							img(src="images/news-img-1.jpg", alt="" srcset="images/news-img-1@2x.jpg 2x")
+						.news__item-main
+							.news__item-bar
+								a(href="#").news-category Whitepaper
+								span.news__item-date 10 March 2021
+							h4
+								a(href="#") SDN-microSENSE project kick-off meeting in Seville, Spain
+							.news__item-desc
+								p CyberLens participated to the kick-off meeting of SDN-microSENSE project held in Seville on 4-5 June 2019, being actively engaged to the development of a secure, resilient to cyber attacks, privacy-enabled and protected ...
+				.col-12.col-md-6.col-lg-4
+					.news__item
+						a(href="#").news__item-img
+							img(src="images/news-img-2.jpg", alt="" srcset="images/news-img-2@2x.jpg 2x")
+						.news__item-main
+							.news__item-bar
+								a(href="#").news-category Whitepaper
+								span.news__item-date 10 March 2021
+							h4
+								a(href="#") SDN-microSENSE project kick-off meeting in Seville, Spain
+							.news__item-desc
+								p CyberLens participated to the kick-off meeting of SDN-microSENSE project held in Seville on 4-5 June 2019, being actively engaged to the development of a secure, resilient to cyber attacks, privacy-enabled and protected ...
+				.col-12.col-md-6.col-lg-4
+					.news__item
+						a(href="#").news__item-img
+							img(src="images/news-img-3.jpg", alt="" srcset="images/news-img-3@2x.jpg 2x")
+						.news__item-main
+							.news__item-bar
+								a(href="#").news-category Whitepaper
+								span.news__item-date 10 March 2021
+							h4
+								a(href="#") SDN-microSENSE project kick-off meeting in Seville, Spain
+							.news__item-desc
+								p CyberLens participated to the kick-off meeting of SDN-microSENSE project held in Seville on 4-5 June 2019, being actively engaged to the development of a secure, resilient to cyber attacks, privacy-enabled and protected ...

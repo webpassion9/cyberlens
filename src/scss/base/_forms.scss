@@ -1,0 +1,153 @@
+//- --------------------------------------------------------------------------
+//- Form
+//- --------------------------------------------------------------------------
+
+
+.is-error {
+    border-color: #8A0502;
+}
+
+.is-success {
+    border-color: #159E24;
+}
+
+// -----
+
+button, input[type="submit"] {
+    border: 0;
+}
+
+// -----
+
+.ui-input {
+	display: block;
+	width: 100%;
+	background: $gray;
+	height: 56px;
+	padding: 5px 25px;
+	border-radius: 7px;
+	border: solid 1px rgba(61, 61, 69, 0.5);
+	margin-bottom: 12px;
+	font-size: 15px;
+	color: $white;
+	font-family: $fontSecond;
+	
+	-webkit-appearance: none;
+	transition: 0.25s;
+
+	&::placeholder {
+		color: $gray-light4;
+	}
+	
+	&:focus {
+		border-color: rgba(240, 105, 56, 0.45);
+		box-shadow: 0 0 0 3px rgba(240, 105, 56, 0.1), 0 1px 2px 0 rgba(240, 105, 56, 0.12), 0 1px 3px 0 rgba(240, 105, 56, 0.12);
+	}
+
+	&--subscribe {
+		height: 64px;
+		border-radius: 11px;
+	}
+}
+
+.ui-textarea {
+	@extend .ui-input;
+
+	height: 192px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.form-base {
+	.row {
+		margin-left: -6px;
+		margin-right: -6px;
+		.col {
+			padding-left: 6px;
+			padding-right: 6px;
+		}
+	}
+	&__bottom {
+		margin-top: 20px;
+		&.row {
+			flex-direction: column;
+			align-items: flex-start;
+			@include breakpoint(md) {
+				flex-direction: row;
+				align-items: center;
+			
+			}
+		}
+		@include breakpoint(md) {
+			align-items: center;
+			flex-direction: row;
+		}
+		.btn-default {
+			@include breakpoint(md) {
+				margin-right: 28px;
+			}
+			@include breakpointMax(md) {
+				margin-top: 30px;
+			}
+		}
+	}
+}
+
+
+.ui-checkbox {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	&__icon {
+		flex-shrink: 0;
+		margin-right: 12px;
+		width: 20px;
+		height: 20px;
+		border-radius: 5px;
+		border: solid 1px rgba(61, 61, 69, 0.5);
+		background-color: #1f1f24;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: .25s;
+		svg {
+			opacity: 0;
+			transition: .25s;
+			visibility: hidden;
+		}
+	}
+	&__text {
+		font-size: 15px;
+		line-height: 24px;
+		color: $gray-light4;
+		font-family: $fontSecond;
+		transition: .25s;
+	}
+	&:hover {
+		.ui-checkbox {
+			&__icon {
+				border-color: transparent;
+				box-shadow: 0 1px 2px 0 rgba(240, 105, 56, 0.12), 0 1px 3px 0 rgba(240, 105, 56, 0.12);
+				border: solid 1px rgba(240, 105, 56, 0.45);
+			}
+			&__text {
+				color: $white;
+			}
+		}
+	}
+	input{
+		&:checked {
+			&+.ui-checkbox__icon {
+				background: $orange;
+				border-color: transparent;
+				box-shadow: 0 1px 2px 0 rgba(240, 105, 56, 0.12), 0 1px 3px 0 rgba(240, 105, 56, 0.12);
+				border: solid 1px rgba(240, 105, 56, 0.45);
+				svg {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+	}
+}

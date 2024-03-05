@@ -1,0 +1,118 @@
+//- --------------------------------------------------------------------------
+//- Popups
+//- --------------------------------------------------------------------------
+
+.fancybox-is-hidden.popup.popup-project#popup-project-isola
+
+	.popup-project__main
+		.popup-project__header
+			img(src="images/logotypes/isola-header-logo.png", alt="" srcset="images/logotypes/isola-header-logo@2x.png 2x")
+		.row
+			.col-lg-6
+				h4 Project description
+				p “Innovative & Integrated Security System on Board Covering the Life Cycle of a Passenger Ships Voyage – ISOLA” project aims at empowering the Maritime Industry by enhancing the Situational Awareness and supporting the assigned Ship Security Officer & Crew to the execution of their duties especially to the Ship Security Plan. ISOLA develops, integrates, tests, deploys, demonstrates and validates a systematic and fully automated security approach by incorporating innovative technologies for sensing, monitoring, data fusion, alarming and reporting real-time during illegal incidents. This will ensure high level of security among all the passengers of the ship and augmentation of the Ship Security Plan. 
+			.col-lg-6
+				h4 Cyberlens’ role
+				p Cyberlens’ role in ISOLA is twofold: on the one hand it involves the development of a Dynamic Vulnerability Assessment and Testing Service (DVATS) which would address the propagated vulnerabilities located in passenger ships, while on the other hand the company is in charge of leading the Pilot Use Case (PUC) to test the platform’s response to cyber security incidents and its mitigation mechanisms, ensuring  secured platform connections and information exchange against cyber-attacks.
+	.popup-project__bottom
+		a(href="https://isola-project.eu/" target="_blank").link-site 
+			+sprite('link-open') 
+			span https://isola-project.eu/
+
+.fancybox-is-hidden.popup#popup-contact.popup-contact
+
+	div
+		h3.h3-mod-size-sec Contact Us
+		.text-desc Fill-out the form below, and we will get back to you as soon as possible
+		form.form-base
+			.row
+				.col.col-12.col-md-6
+					input(type="text" placeholder="Name*").ui-input
+				.col.col-12.col-md-6
+					input(type="email" placeholder="Email*").ui-input
+				.col.col-12
+					textarea(placeholder="Message").ui-textarea
+			.row.form-base__bottom
+				.col.col-auto.order-md-2
+					label.ui-checkbox
+						input(type="checkbox" hidden)
+						span.ui-checkbox__icon
+							+sprite('check')
+						span.ui-checkbox__text Subscribe to Cyberlens security blog
+				.col.col-auto
+					input(type="submit" value="Send").btn.btn-default
+
+.fancybox-is-hidden.popup.popup-team#popup-team-1
+
+	div
+		.row
+			.col.col-12.col-md-5.popup-team__img
+				img(src="images/team-1-large.jpg", alt="" srcset="images/team-1-large@2x.jpg 2x")
+			.col.col-12.col-md-7.popup-team__main
+				h2.h2-mod-medium Victor Pacheco
+				.team__item-desc CEO / CTO and Co-founder
+				.text-desc
+					p Victor is a former intelligence professional and data scientist with the British government’s signals intelligence agency, GCHQ. He has extensive experience in complex analysis and visualisation of large, structured and unstructured data sets to generate critical insights for national security and the detection of serious crimes.
+
+				a(href="#" target="_blank").link-soc
+					+sprite('linkedin')
+					span LinkedIn
+
+.fancybox-is-hidden.popup#popup-thank.popup-thank
+
+	.container
+		h2.h2-mod-medium Thank You!
+		.text-desc We will get back to you as soon as possible
+		div
+			a(data-fancybox-close).btn.btn-default Close
+
+
+.fancybox-is-hidden.popup.popup-timeline#popup-timeline-1
+
+	.popup-timeline__top-bar
+		a(href="#").news-category Targeted Attack
+		span.news__item-date 10 March 2021
+	h2.h2-mod-medium 1 Detecting Post-Compromise Threat Activity in Microsoft Cloud Environments
+	.popup-timeline__source Source: 
+		a(href="https://us-cert.cisa.gov/ncas/alerts/aa21-008a" target="_blank") https://us-cert.cisa.gov/ncas/alerts/aa21-008a
+	div
+		h4 Summary
+		p This Alert is a companion alert to AA20-352A: Advanced Persistent Threat Compromise of Government Agencies, Critical Infrastructure, and Private Sector Organizations. AA20-352A primarily focuses on an advanced persistent threat (APT) actor’s compromise of SolarWinds Orion products as an initial access vector into networks of U.S. Government agencies, critical infrastructure entities, and private network organizations. As noted in AA20-352A, the Cybersecurity and Infrastructure Security Agency (CISA) has evidence of initial access vectors in addition to the compromised SolarWinds Orion products.
+		h4 Technical Details
+		p Frequently, CISA has observed the APT actor gaining Initial Access [TA0001] to victims’ enterprise networks via compromised SolarWinds Orion products (e.g., Solorigate, Sunburst).[1] However, CISA is investigating instances in which the threat actor may have obtained initial access by Password Guessing [T1110.001], Password Spraying [T1110.003], and/or exploiting inappropriately secured administrative or service credentials (Unsecured Credentials [T1552]) instead of utilizing the compromised SolarWinds Orion products.
+		p CISA observed this threat actor moving from user context to administrator rights for Privilege Escalation [TA0004] within a compromised network and using native Windows tools and techniques, such as Windows Management Instrumentation (WMI), to enumerate the Microsoft Active Directory Federated Services (ADFS) certificate-signing capability. This enumeration allows threat actors to forge authentication tokens (OAuth) to issue claims to service providers—without having those claims checked against the identity provider—and then to move laterally to Microsoft Cloud environments (Lateral Movement [TA0008]).
+	
+	.popup-timeline__nav.is-lg-hidden
+		button(data-fancybox-prev disabled).popup-timeline-nav-btn
+			span.btn.btn-arrow
+				+sprite('arrow-left')
+			| Previous date
+		button(data-fancybox-next).popup-timeline-nav-btn Next date
+			span.btn.btn-arrow
+				+sprite('arrow-right')
+
+
+.fancybox-is-hidden.popup.popup-timeline#popup-timeline-2
+
+	.popup-timeline__top-bar
+		a(href="#").news-category Targeted Attack
+		span.news__item-date 10 March 2021
+	h2.h2-mod-medium 2 Detecting Post-Compromise Threat Activity in Microsoft Cloud Environments
+	.popup-timeline__source Source: 
+		a(href="https://us-cert.cisa.gov/ncas/alerts/aa21-008a" target="_blank") https://us-cert.cisa.gov/ncas/alerts/aa21-008a
+	div
+		h4 Summary
+		p This Alert is a companion alert to AA20-352A: Advanced Persistent Threat Compromise of Government Agencies, Critical Infrastructure, and Private Sector Organizations. AA20-352A primarily focuses on an advanced persistent threat (APT) actor’s compromise of SolarWinds Orion products as an initial access vector into networks of U.S. Government agencies, critical infrastructure entities, and private network organizations. As noted in AA20-352A, the Cybersecurity and Infrastructure Security Agency (CISA) has evidence of initial access vectors in addition to the compromised SolarWinds Orion products.
+		h4 Technical Details
+		p Frequently, CISA has observed the APT actor gaining Initial Access [TA0001] to victims’ enterprise networks via compromised SolarWinds Orion products (e.g., Solorigate, Sunburst).[1] However, CISA is investigating instances in which the threat actor may have obtained initial access by Password Guessing [T1110.001], Password Spraying [T1110.003], and/or exploiting inappropriately secured administrative or service credentials (Unsecured Credentials [T1552]) instead of utilizing the compromised SolarWinds Orion products.
+		p CISA observed this threat actor moving from user context to administrator rights for Privilege Escalation [TA0004] within a compromised network and using native Windows tools and techniques, such as Windows Management Instrumentation (WMI), to enumerate the Microsoft Active Directory Federated Services (ADFS) certificate-signing capability. This enumeration allows threat actors to forge authentication tokens (OAuth) to issue claims to service providers—without having those claims checked against the identity provider—and then to move laterally to Microsoft Cloud environments (Lateral Movement [TA0008]).
+
+	.popup-timeline__nav.is-lg-hidden
+		button(data-fancybox-prev).popup-timeline-nav-btn
+			span.btn.btn-arrow
+				+sprite('arrow-left')
+			| Previous date
+		button(data-fancybox-next disabled).popup-timeline-nav-btn Next date
+			span.btn.btn-arrow
+				+sprite('arrow-right')
+

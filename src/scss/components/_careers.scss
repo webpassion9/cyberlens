@@ -1,0 +1,12 @@
+.careers-top {
+	background-image: url(../images/careers-top-bg.jpg) ;
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		background-image: url(../images/careers-top-bg@2x.jpg);
+		background-repeat:  no-repeat;
+		background-position: center 0;
+		background-size: cover;
+	}
+}

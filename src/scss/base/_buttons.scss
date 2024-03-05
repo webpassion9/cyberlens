@@ -1,0 +1,230 @@
+//- --------------------------------------------------------------------------
+//- Buttons
+//- --------------------------------------------------------------------------
+
+.btn {
+	text-decoration: none;
+	background: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	transition: .25s;
+	text-align: center;
+	max-width: 100%;
+	cursor: pointer;
+	flex-shrink: 0;
+	&:hover {
+		text-decoration: none;
+	}
+	&:active {
+		transition: none;
+	}
+
+	&--fullwidth {
+		width: 100%;
+	}
+
+	&-arrow {
+		width: 44px;
+		height: 44px;
+		background: $gray3;
+		border-radius: 100%;
+		margin-right: 3px;
+		svg {
+			stroke: $white;
+		}
+
+		&:hover {
+			background-color: $gray4;
+		}
+
+		&--white {
+			background-color: $white;
+			&:hover {
+				background-color: $white;
+			}
+			svg {
+				stroke: $gray2;
+			}
+		}
+	}
+
+	&-default {
+		font-family: $fontBase;
+		background: $orange;
+		color: $white;
+		height: 56px;
+		padding: 5px 35px;
+		border-radius: 7px;
+		font-size: 16px;
+		font-weight: 500;
+		min-width: 115px;
+		&:hover {
+			background: $orange-light2;	
+		}
+	}
+
+
+	&-mob-menu {
+		position: relative;
+		width: 20px;
+		height: 12px;
+		transition: 0s;
+		z-index: 20;
+		& span,
+		&:before,
+		&:after{
+			content: "";
+			display: block;
+			width: 20px;
+			height: 2px;
+			background-color: $white2;
+			position: absolute;
+			left: 0;
+			transition: all 250ms ease-in-out;
+			border-radius: 1px;
+		}
+
+		&:before{
+			top:0px;
+		}
+		& span{
+			top:5px;
+			opacity:1;
+		}
+		&:after{
+			top:10px;
+		}
+
+	}
+
+	&-close-white {
+		svg {
+			stroke: $white;
+
+		}
+	}
+
+
+}
+
+// ----
+
+.link-more {
+	color: $orange;
+	font-size: 16px;
+	font-weight: 500;
+	svg {
+		margin-left: 4px;
+		position: relative;
+		top: -1px;
+		transition: .25s;
+	}
+
+	&:hover {
+		text-decoration: none;
+		svg {
+			transform: translateX(4px);
+		}
+	}
+}
+
+// ----
+
+.link-get {
+	text-transform: uppercase;
+	font-size: 11px;
+	line-height: 15px;
+	font-family: $fontSecond;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	color: $orange;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 3px;
+	&:hover {
+		text-decoration: none;
+		border-color: rgba(#f06938, .3);	
+	}
+}
+
+//-----
+
+.link-site {
+	font-size: 16px;
+	line-height: 20px;
+	color: $orange;
+	font-weight: 600;
+	span {
+		border-bottom: 1px solid transparent;
+		display: inline-block;
+		transition: .25s;
+	}
+	svg {
+		margin-right: 15px;
+	}
+	&:hover {
+		text-decoration: none;
+		span {
+			border-color: rgba(#f06938, .3);	
+		}
+	}
+}
+
+// -----
+
+.link-soc {
+	color: $gray-light2;
+	font-weight: 500;
+	font-size: 16px;
+	span {
+		border-bottom: 1px solid transparent;
+	}
+	svg {
+		margin-top: -5px;
+		margin-right: 10px;
+		fill: $gray-light2;
+	}
+	&:hover {
+		text-decoration: none;
+		span {
+			border-color: rgba($gray-light2,.3);
+		}
+	}
+}
+
+// -----
+
+.popup-timeline-nav-btn {
+	color: $gray2;
+	cursor: pointer;
+	background: transparent;
+	font-family: $fontBase;
+	padding: 0;
+	&[data-fancybox-prev] {
+		.btn-arrow {
+			margin-right: 7px;
+			background-color: $gray4;
+		}
+	}
+	&[data-fancybox-next] {
+		.btn-arrow {
+			margin-left: 7px;
+		}
+	}
+	&[disabled] {
+		opacity: .5;
+		cursor: default;
+	}
+	&:hover {
+		text-decoration: none;
+	}
+	.btn-arrow {
+		@include breakpointMax(sm) {
+			width: 30px;
+			height: 30px;
+
+		
+		}
+	}
+}

@@ -1,0 +1,46 @@
+// --------------------------------------------------------------------------
+// Icons
+// --------------------------------------------------------------------------
+
+[class^="icon-"], [class*=" icon-"] {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	fill: currentColor;
+	fill-rule: evenodd;
+	max-height: 100%;
+	max-width: 100%;
+	flex-shrink: 0;
+}
+
+.arrow-right-circle-orange {
+	width: 20px;
+	height: 20px;
+}
+
+.arrow-right {
+	fill: none;
+	stroke: $gray2;
+}
+
+.arrow-left {
+	fill: none;
+	stroke: $gray2;
+}
+
+.link-open {
+	width: 16px;
+	height: 16px;
+}
+
+.arrow-right-circle {
+	fill: $white;
+}
+
+.check {
+	fill: none;
+	stroke: $white;
+	* {
+		fill: none;
+	}
+}

@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="518" height="518" viewBox="0 0 518 518">
+    <defs>
+        <filter id="9s1e0ioqye" width="114.5%" height="114.5%" x="-7.2%" y="-7.2%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="4" result="shadowSpreadOuter1"/>
+            <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feMorphology in="SourceAlpha" radius="1" result="shadowInner"/>
+            <feOffset in="shadowInner" result="shadowInner"/>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.09 0"/>
+        </filter>
+        <filter id="r0rpboplng" width="107.5%" height="107.5%" x="-3.7%" y="-3.7%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="4" result="shadowSpreadOuter1"/>
+            <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feMorphology in="SourceAlpha" radius="1" result="shadowInner"/>
+            <feOffset in="shadowInner" result="shadowInner"/>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.09 0"/>
+        </filter>
+        <filter id="zqcrim7lpi" width="105%" height="105%" x="-2.5%" y="-2.5%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="4" result="shadowSpreadOuter1"/>
+            <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feMorphology in="SourceAlpha" radius="1" result="shadowInner"/>
+            <feOffset in="shadowInner" result="shadowInner"/>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.09 0"/>
+        </filter>
+        <filter id="gdxx95255k" width="110.8%" height="2200%" x="-5.4%" y="-1050%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="shadowSpreadOuter1"/>
+            <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feMorphology in="SourceAlpha" radius="2" result="shadowInner"/>
+            <feOffset in="shadowInner" result="shadowInner"/>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.921568627 0 0 0 0 0.380392157 0 0 0 0 0.192156863 0 0 0 0.150570743 0"/>
+        </filter>
+        <filter id="m8bvis1qmm" width="372.7%" height="415.8%" x="-136.4%" y="-157.9%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.939786673 0 0 0 0 0.288559079 0 0 0 0 0.133424968 0 0 0 0.196713321 0"/>
+        </filter>
+        <radialGradient id="zowjehyqca" cx="50%" cy="50%" r="54.02%" fx="50%" fy="50%">
+            <stop offset="0%" stop-color="#3C3C49"/>
+            <stop offset="0%" stop-color="#3C3C49"/>
+            <stop offset="46.19%" stop-color="#3C3C49"/>
+            <stop offset="100%" stop-color="#3C3C49" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="4uorr1sghb" cx="50%" cy="50%" r="51.874%" fx="50%" fy="50%">
+            <stop offset="0%" stop-color="#3C3C49"/>
+            <stop offset="31.36%" stop-color="#3C3C49"/>
+            <stop offset="53.637%" stop-color="#3C3C49"/>
+            <stop offset="100%" stop-color="#3C3C49" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="7s36e70xic" cx="50%" cy="50%" r="51.354%" fx="50%" fy="50%">
+            <stop offset="0%" stop-color="#3C3C49"/>
+            <stop offset="31.36%" stop-color="#3C3C49"/>
+            <stop offset="68.008%" stop-color="#3C3C49"/>
+            <stop offset="100%" stop-color="#3C3C49" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="56pdy85x7d" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" stop-color="#3C3C49"/>
+            <stop offset="31.36%" stop-color="#3C3C49"/>
+            <stop offset="77.099%" stop-color="#3C3C49"/>
+            <stop offset="100%" stop-color="#3C3C49" stop-opacity="0"/>
+        </radialGradient>
+        <circle id="h67dbehqof" cx="259" cy="259" r="69"/>
+        <circle id="5zm5omvqfh" cx="259" cy="259" r="134"/>
+        <circle id="434a7e861j" cx="259" cy="259" r="199"/>
+        <path id="ms5w7rgz3l" d="M-21.729 72.125h203"/>
+        <path id="mikqkavbyn" d="M412 219h22l-11-19-11 19zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-797 -1333) translate(797 1333)">
+                <circle cx="259" cy="259" r="203" fill="#27272E" opacity=".101"/>
+                <g fill-rule="nonzero" opacity=".5">
+                    <path fill="url(#zowjehyqca)" d="M259 195c35.346 0 64 28.654 64 64 0 35.346-28.654 64-64 64-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64zm0 2c-34.242 0-62 27.758-62 62 0 34.242 27.758 62 62 62 34.242 0 62-27.758 62-62 0-34.242-27.758-62-62-62zm0 5c31.48 0 57 25.52 57 57s-25.52 57-57 57-57-25.52-57-57 25.52-57 57-57zm0 2c-30.376 0-55 24.624-55 55s24.624 55 55 55 55-24.624 55-55-24.624-55-55-55zm0 5c27.614 0 50 22.386 50 50s-22.386 50-50 50-50-22.386-50-50 22.386-50 50-50zm0 2c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm0 5c23.748 0 43 19.252 43 43s-19.252 43-43 43-43-19.252-43-43 19.252-43 43-43zm0 2c-22.644 0-41 18.356-41 41s18.356 41 41 41 41-18.356 41-41-18.356-41-41-41zm0 5c19.882 0 36 16.118 36 36s-16.118 36-36 36-36-16.118-36-36 16.118-36 36-36zm0 2c-18.778 0-34 15.222-34 34s15.222 34 34 34 34-15.222 34-34-15.222-34-34-34zm0 5c16.016 0 29 12.984 29 29s-12.984 29-29 29-29-12.984-29-29 12.984-29 29-29zm0 2c-14.912 0-27 12.088-27 27s12.088 27 27 27 27-12.088 27-27-12.088-27-27-27zm0 5c12.15 0 22 9.85 22 22s-9.85 22-22 22-22-9.85-22-22 9.85-22 22-22zm0 2c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20-8.954-20-20-20zm0 5c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15 0-8.284 6.716-15 15-15zm0 2c-7.18 0-13 5.82-13 13s5.82 13 13 13 13-5.82 13-13-5.82-13-13-13z" opacity=".6"/>
+                    <path fill="url(#4uorr1sghb)" d="M259 130c71.245 0 129 57.755 129 129s-57.755 129-129 129-129-57.755-129-129 57.755-129 129-129zm0 2c-70.14 0-127 56.86-127 127s56.86 127 127 127 127-56.86 127-127-56.86-127-127-127zm0 5c67.379 0 122 54.621 122 122 0 67.379-54.621 122-122 122-67.379 0-122-54.621-122-122 0-67.379 54.621-122 122-122zm0 2c-66.274 0-120 53.726-120 120s53.726 120 120 120 120-53.726 120-120-53.726-120-120-120zm0 5c63.513 0 115 51.487 115 115s-51.487 115-115 115-115-51.487-115-115 51.487-115 115-115zm0 2c-62.408 0-113 50.592-113 113s50.592 113 113 113 113-50.592 113-113-50.592-113-113-113zm0 5c59.647 0 108 48.353 108 108s-48.353 108-108 108-108-48.353-108-108 48.353-108 108-108zm0 2c-58.542 0-106 47.458-106 106s47.458 106 106 106 106-47.458 106-106-47.458-106-106-106zm0 5c55.78 0 101 45.22 101 101s-45.22 101-101 101-101-45.22-101-101 45.22-101 101-101zm0 2c-54.676 0-99 44.324-99 99s44.324 99 99 99 99-44.324 99-99-44.324-99-99-99zm0 5c51.915 0 94 42.085 94 94s-42.085 94-94 94-94-42.085-94-94 42.085-94 94-94zm0 2c-50.81 0-92 41.19-92 92s41.19 92 92 92 92-41.19 92-92-41.19-92-92-92zm0 5c48.049 0 87 38.951 87 87s-38.951 87-87 87-87-38.951-87-87 38.951-87 87-87zm0 2c-46.944 0-85 38.056-85 85s38.056 85 85 85 85-38.056 85-85-38.056-85-85-85zm0 5c44.183 0 80 35.817 80 80s-35.817 80-80 80-80-35.817-80-80 35.817-80 80-80zm0 2c-43.078 0-78 34.922-78 78s34.922 78 78 78 78-34.922 78-78-34.922-78-78-78z"/>
+                    <path fill="url(#7s36e70xic)" d="M259 65c107.143 0 194 86.857 194 194s-86.857 194-194 194S65 366.143 65 259 151.857 65 259 65zm0 2C152.961 67 67 152.961 67 259s85.961 192 192 192 192-85.961 192-192S365.039 67 259 67zm0 5c103.277 0 187 83.723 187 187s-83.723 187-187 187S72 362.277 72 259 155.723 72 259 72zm0 2C156.827 74 74 156.827 74 259s82.827 185 185 185 185-82.827 185-185S361.173 74 259 74zm0 5c99.411 0 180 80.589 180 180s-80.589 180-180 180S79 358.411 79 259 159.589 79 259 79zm0 2c-98.307 0-178 79.693-178 178s79.693 178 178 178 178-79.693 178-178S357.307 81 259 81zm0 5c95.545 0 173 77.455 173 173s-77.455 173-173 173S86 354.545 86 259 163.455 86 259 86zm0 2c-94.44 0-171 76.56-171 171s76.56 171 171 171 171-76.56 171-171S353.44 88 259 88zm0 5c91.68 0 166 74.32 166 166s-74.32 166-166 166S93 350.68 93 259 167.32 93 259 93zm0 2c-90.575 0-164 73.425-164 164s73.425 164 164 164 164-73.425 164-164S349.575 95 259 95zm0 5c87.813 0 159 71.187 159 159s-71.187 159-159 159-159-71.187-159-159 71.187-159 159-159zm0 2c-86.709 0-157 70.291-157 157s70.291 157 157 157 157-70.291 157-157-70.291-157-157-157zm0 5c83.947 0 152 68.053 152 152s-68.053 152-152 152-152-68.053-152-152 68.053-152 152-152zm0 2c-82.843 0-150 67.157-150 150s67.157 150 150 150 150-67.157 150-150-67.157-150-150-150zm0 5c80.081 0 145 64.919 145 145s-64.919 145-145 145-145-64.919-145-145 64.919-145 145-145zm0 2c-78.977 0-143 64.023-143 143s64.023 143 143 143 143-64.023 143-143-64.023-143-143-143z" opacity=".4"/>
+                    <path fill="url(#56pdy85x7d)" d="M259 0c143.042 0 259 115.958 259 259S402.042 518 259 518 0 402.042 0 259 115.958 0 259 0zm0 2C117.063 2 2 117.063 2 259s115.063 257 257 257 257-115.063 257-257S400.937 2 259 2zm0 5c139.176 0 252 112.824 252 252S398.176 511 259 511 7 398.176 7 259 119.824 7 259 7zm0 2C120.929 9 9 120.929 9 259s111.929 250 250 250 250-111.929 250-250S397.071 9 259 9zm0 5c135.31 0 245 109.69 245 245S394.31 504 259 504 14 394.31 14 259 123.69 14 259 14zm0 2C124.795 16 16 124.795 16 259c0 134.205 108.795 243 243 243 134.205 0 243-108.795 243-243 0-134.205-108.795-243-243-243zm0 5c131.444 0 238 106.556 238 238 0 131.444-106.556 238-238 238-131.444 0-238-106.556-238-238C21 127.556 127.556 21 259 21zm0 2C128.66 23 23 128.66 23 259s105.66 236 236 236 236-105.66 236-236S389.34 23 259 23zm0 5c127.578 0 231 103.422 231 231S386.578 490 259 490 28 386.578 28 259 131.422 28 259 28zm0 2C132.527 30 30 132.527 30 259s102.527 229 229 229 229-102.527 229-229S385.473 30 259 30zm0 5c123.712 0 224 100.288 224 224S382.712 483 259 483 35 382.712 35 259 135.288 35 259 35zm0 2C136.393 37 37 136.393 37 259s99.393 222 222 222 222-99.393 222-222S381.607 37 259 37zm0 5c119.846 0 217 97.154 217 217s-97.154 217-217 217S42 378.846 42 259 139.154 42 259 42zm0 2C140.259 44 44 140.259 44 259s96.259 215 215 215 215-96.259 215-215S377.741 44 259 44zm0 5c115.98 0 210 94.02 210 210s-94.02 210-210 210S49 374.98 49 259 143.02 49 259 49zm0 2C144.125 51 51 144.125 51 259s93.125 208 208 208 208-93.125 208-208S373.875 51 259 51z" opacity=".3"/>
+                </g>
+                <g opacity=".6">
+                    <use fill="#000" filter="url(#9s1e0ioqye)" xlink:href="#h67dbehqof"/>
+                    <circle cx="259" cy="259" r="71" stroke="#7B7B84" stroke-width="4"/>
+                </g>
+                <g opacity=".8">
+                    <use fill="#000" filter="url(#r0rpboplng)" xlink:href="#5zm5omvqfh"/>
+                    <circle cx="259" cy="259" r="136" stroke="#7B7B84" stroke-width="4"/>
+                </g>
+                <g opacity=".6">
+                    <use fill="#000" filter="url(#zqcrim7lpi)" xlink:href="#434a7e861j"/>
+                    <circle cx="259" cy="259" r="201" stroke="#7B7B84" stroke-width="4"/>
+                </g>
+                <circle cx="259" cy="259" r="203" fill-rule="nonzero" opacity=".5"/>
+                <g transform="translate(251 115.104)">
+                    <circle cx="8" cy="143.896" r="8" fill="#F06938"/>
+                    <g transform="rotate(-45 79.771 72.125)">
+                        <use fill="#000" filter="url(#gdxx95255k)" xlink:href="#ms5w7rgz3l"/>
+                        <use stroke="#F06938" stroke-width="4" xlink:href="#ms5w7rgz3l"/>
+                    </g>
+                </g>
+                <g fill-rule="nonzero">
+                    <use fill="#000" filter="url(#m8bvis1qmm)" xlink:href="#mikqkavbyn"/>
+                    <use fill="#F06938" xlink:href="#mikqkavbyn"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

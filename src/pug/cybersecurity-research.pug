@@ -1,0 +1,160 @@
+extends includes/_app
+
+block head
+
+	- var title = 'Cybersecurity research - Cyberlens';
+	- var pageClass = 'is-page-main';
+
+
+block main
+	
+	.research
+		.container
+
+			.row.info-block
+				.col-md-6
+					.title-head Cybersecurity Research
+					h2 World-leading SME in high-profile international research projects
+					.text-desc
+						p Cyberlens delivers next generation threat detection and response technologies via our research projects and product development, for both existing and emerging industry sectors, where digital transformation requires equally robust cybersecurity protection. 
+				.col-md-6.info-block__img
+					img(src="images/cap.png", alt="" srcset="images/cap@2x.png 2x")
+
+			.research__partners
+				h4.text-center Research Partners
+				.research__slider
+					a(href="#").btn.btn-arrow.research__slider-btn-prev
+						+sprite('arrow-left')
+					ul.research__slider-main
+						li
+							img(src="images/logotypes/intel.svg", alt="")
+						li
+							img(src="images/logotypes/nec.svg", alt="")
+						li
+							img(src="images/logotypes/t-mobile.svg", alt="")
+						li
+							img(src="images/logotypes/nokia.svg", alt="")
+						li
+							img(src="images/logotypes/bmw-group.svg", alt="")
+						li
+							img(src="images/logotypes/qualcomm.svg", alt="")
+						li
+							img(src="images/logotypes/thales.svg", alt="")
+						li
+							img(src="images/logotypes/thales.svg", alt="")
+					a(href="#").btn.btn-arrow.research__slider-btn-next
+						+sprite('arrow-right')
+	.section-white
+		.tabs-menu
+			.container
+				ul.tabs-menu__list
+					li.current
+						a(href="#") All Projects
+					li
+						a(href="#") Industry 4.0
+					li
+						a(href="#") Transportation 4.0
+					li
+						a(href="#") Healthcare
+					li
+						a(href="#") Defence & Security
+		.container.section-default.projects
+			.row
+				.col.col-12.col-sm-6.col-lg-4
+					a(href="#popup-project-cyrene" data-fancybox).projects__item
+						.projects__item-logo
+							img(src="images/logotypes/cyrene.png", alt="" srcset="images/logotypes/cyrene@2x.png 2x")
+						.projects__item-title Cyrene
+						.projects__item-desc Certifying the Security and Resilience of Supply Chain Services
+						.projects__item-category Industry 4.0
+				.col.col-12.col-sm-6.col-lg-4
+					a(href="#popup-project-7shield" data-fancybox).projects__item
+						.projects__item-logo
+							img(src="images/logotypes/7shield.png", alt="" srcset="images/logotypes/7shield@2x.png 2x")
+						.projects__item-title 7Shield
+						.projects__item-desc Safety and Security Standards of Space Systems, ground Segments and Satellite data assets
+						.projects__item-category Defence & Security
+				.col.col-12.col-sm-6.col-lg-4
+					a(href="#popup-project-isola" data-fancybox).projects__item
+						.projects__item-logo
+							img(src="images/logotypes/isola.png", alt="" srcset="images/logotypes/isola@2x.png 2x")
+						.projects__item-title Isola
+						.projects__item-desc Innovative & Integrated Security System on Board Covering the Life Cycle of a Passenger Ships Voyage
+						.projects__item-category Transportation 4.0
+				.col.col-12.col-sm-6.col-lg-4
+					a(href="#popup-project-respond" data-fancybox).projects__item
+						.projects__item-logo
+							img(src="images/logotypes/respond.png", alt="" srcset="images/logotypes/respond@2x.png 2x")
+						.projects__item-title Respond-A
+						.projects__item-desc Next-generation equipment tools and mission-critical strategies for First Responders
+						.projects__item-category Defence & Security
+				.col.col-12.col-sm-6.col-lg-4
+					a(href="#popup-project-life-champs" data-fancybox).projects__item
+						.projects__item-logo
+							img(src="images/logotypes/life-champs.png", alt="" srcset="images/logotypes/life-champs@2x.png 2x")
+						.projects__item-title LifeChamps
+						.projects__item-desc A Collective Intelligence Platform to Support Cancer Championslogotypes/
+						.projects__item-category Healthcare
+				.col.col-12.col-sm-6.col-lg-4
+					a(href="#popup-project-inspire-5g" data-fancybox).projects__item
+						.projects__item-logo
+							img(src="images/logotypes/inspire-5g.png", alt="" srcset="images/logotypes/inspire-5g@2x.png 2x")
+						.projects__item-title INSPIRE-5GplusBeyond
+						.projects__item-desc INtelligent Security and PervasIve tRust for 5G and Beyond
+						.projects__item-category Industry 4.0
+				.col.col-12.col-sm-6.col-lg-4
+					a(href="#popup-project-caramel" data-fancybox).projects__item
+						.projects__item-logo
+							img(src="images/logotypes/caramel.png", alt="" srcset="images/logotypes/caramel@2x.png 2x")
+						.projects__item-title Caramel
+						.projects__item-desc Artificial Intelligence based cybersecurity for connected and automated vehicles
+						.projects__item-category Transportation 4.0
+				.col.col-12.col-sm-6.col-lg-4
+					a(href="#popup-project-sdn-usense" data-fancybox).projects__item
+						.projects__item-logo
+							img(src="images/logotypes/sdn-usense.png", alt="" srcset="images/logotypes/sdn-usense@2x.png 2x")
+						.projects__item-title SDN-microSENSESystEm
+						.projects__item-desc SDN – microgrid reSilient Electrical eNergy SystEm
+						.projects__item-category Industry 4.0
+				.col.col-12.col-sm-6.col-lg-4
+					a(href="#popup-project-crest" data-fancybox).projects__item
+						.projects__item-logo
+							img(src="images/logotypes/crest.png", alt="" srcset="images/logotypes/crest@2x.png 2x")
+						.projects__item-title CREST
+						.projects__item-desc Fighting Crime and TerroRism with an IoT-enabled Autonomous Platform 
+						.projects__item-category Defence & Security
+				.col.col-12.col-sm-6.col-lg-4
+					a(href="#popup-project-spider" data-fancybox).projects__item
+						.projects__item-logo
+							img(src="images/logotypes/spider.png", alt="" srcset="images/logotypes/spider@2x.png 2x")
+						.projects__item-title SPIDER
+						.projects__item-desc A cyberSecurity Platform for vIrtualiseD 5G cybEr Range services
+						.projects__item-category Industry 4.0
+				.col.col-12.col-sm-6.col-lg-4
+					a(href="#popup-project-curex" data-fancybox).projects__item
+						.projects__item-logo
+							img(src="images/logotypes/curex.png", alt="" srcset="images/logotypes/curex@2x.png 2x")
+						.projects__item-title CUREX
+						.projects__item-desc seCUre and pRivate hEalth data eXchange
+						.projects__item-category Healthcare
+				.col.col-12.col-sm-6.col-lg-4
+					a(href="#popup-project-5gcarmen" data-fancybox).projects__item
+						.projects__item-logo
+							img(src="images/logotypes/5gcarmen.png", alt="" srcset="images/logotypes/5gcarmen@2x.png 2x")
+						.projects__item-title 5G-CARMEN
+						.projects__item-desc 5G for Connected and Automated Road Mobility in the European UnioN
+						.projects__item-category Transportation 4.0
+				.col.col-12.col-sm-6.col-lg-4
+					a(href="#popup-project-5g-essence" data-fancybox).projects__item
+						.projects__item-logo
+							img(src="images/logotypes/5g-essence.png", alt="" srcset="images/logotypes/5g-essence@2x.png 2x")
+						.projects__item-title 5G ESSENCE5G Experiences
+						.projects__item-desc Embedded Network Services for 5G Experiences 
+						.projects__item-category Industry 4.0
+				.col.col-12.col-sm-6.col-lg-4
+					a(href="#popup-project-roborder" data-fancybox).projects__item
+						.projects__item-logo
+							img(src="images/logotypes/roborder.png", alt="" srcset="images/logotypes/roborder@2x.png 2x")
+						.projects__item-title ROBORDER
+						.projects__item-desc Autonomous swarm of heterogeneous RObots for BORDER surveillance
+						.projects__item-category Defence & Security

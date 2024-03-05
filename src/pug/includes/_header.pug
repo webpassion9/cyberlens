@@ -1,0 +1,104 @@
+//- --------------------------------------------------------------------------
+//- Header
+//- --------------------------------------------------------------------------
+.container
+	.row
+		.col.col-6
+			a(href="#").header__logo
+				img(src="images/logo.svg", alt="")
+		.col.col-6.is-lg-hidden.text-right
+			a(href="#header__main").btn.btn-mob-menu
+				span
+		.col.col-lg-6.header__main#header__main
+			.is-lg-hidden.header__main-top
+				.row
+					.col.col-6
+						a(href="#").header__logo
+							img(src="images/logo.svg", alt="")
+					.col.col-6.text-right
+						a.btn.btn-close-white.header__main-close
+							+sprite('close')
+			ul.header__menu
+				li
+					a(href="#") Platform
+				li.with-submenu
+					a(href="#") Solutions
+					.header__menu-lvl2
+						.container
+							.header__menu-lvl2-inner
+								.row
+									.col-lg-6.is-lg-visible
+										img(src="images/cap-full.png", alt="" srcset="images/cap-full@2x.png 2x")
+									.col-lg-6
+										.header__menu-lvl2-block
+											.header__menu-lvl2-title
+												a(href="#") Cyber-physical XDR in Industry 4.0
+													span.is-lg-visible
+														+sprite('arrow-right-circle')
+										.header__menu-lvl2-block
+											.header__menu-lvl2-title
+												a(href="#") Cybersecurity Research
+													span.is-lg-visible
+														+sprite('arrow-right-circle')
+											.row
+												.col-12.col-lg-4
+													ul.header__menu-lvl2-list
+														li
+															a(href="#") Industry 4.0
+														li
+															a(href="#") Transportation 4.0
+												.col-12.col-lg-4
+													ul.header__menu-lvl2-list
+														li
+															a(href="#") Healthcare
+														li
+															a(href="#") Defence & Security
+
+				li.with-submenu
+					a(href="#") Resources
+					.header__menu-lvl2
+						.container
+							.header__menu-lvl2-inner
+								.row
+									.col-lg-6.is-lg-visible
+										img(src="images/cap-full.png", alt="" srcset="images/cap-full@2x.png 2x")
+									.col-lg-6
+										.header__menu-lvl2-block
+											.header__menu-lvl2-title
+												a(href="#") Browse All Resources
+													span.is-lg-visible
+														+sprite('arrow-right-circle')
+											.row
+												.col-12.col-lg-3
+													ul.header__menu-lvl2-list
+														li
+															a(href="#") News
+														li
+															a(href="#") Datasheet
+														li
+															a(href="#") Videos
+												.col-12.col-lg-3
+													ul.header__menu-lvl2-list
+														li
+															a(href="#") Blog 
+														li
+															a(href="#") Whitepaper
+										.header__menu-lvl2-block
+											.header__menu-lvl2-title
+												a(href="#") Community Tools
+													span.is-lg-visible
+														+sprite('arrow-right-circle')
+											.row
+												.col-12.col-lg-12
+													ul.header__menu-lvl2-list
+														li
+															a(href="#") Cyber-physical Attacks Timeline
+														li
+															a(href="#") DiscØvery - Security analysis for IoT and 5G 
+														li
+															a(href="#") Nightwatch - Coming Soon
+				li
+					a(href="#") Careers
+				li
+					a(href="#") About
+			

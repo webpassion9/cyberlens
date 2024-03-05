@@ -1,0 +1,124 @@
+// --------------------------------------------------------------------------
+// Footer
+// --------------------------------------------------------------------------
+
+.footer {
+	background: $gray2;
+	&__col {
+		@include breakpointMax(lg) {
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 0;	
+			}		
+		}
+	}
+	&__main {
+		padding-top: 40px;
+		@include breakpoint(lg) {
+			padding-top: 90px;
+			padding-bottom: 80px;
+		}
+	}
+	&__title {
+		text-transform: uppercase;
+		color: $white;
+		font-size: 12px;
+		line-height: 16px;
+		margin-bottom: 20px;
+	}
+	&__menu {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		&>li {
+			margin-bottom: 16px;
+			&>a {
+				color: $gray-light6;
+				font-size: 14px;
+				line-height: 16px;
+				font-family: $fontSecond;
+				&:hover {
+					text-decoration: none;
+					color: $orange;	
+				}
+			}
+		}
+	}
+	&__info {
+		color: $gray-light6;
+		font-size: 14px;
+		line-height: 31px;
+		font-family: $fontSecond;
+	}
+	&__bottom {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		@include breakpoint(lg) {
+			padding-top: 90px;
+			padding-bottom: 90px;
+		}
+		@include breakpointMax(lg) {
+			display: flex;
+			flex-direction: column;
+			.socials {
+				margin-bottom: 20px;
+			}
+		}
+		&-copyright {
+			color: $white;
+			font-size: 10px;
+			letter-spacing: 0.36px;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+			@include breakpoint(lg) {
+				margin-right: 35px;
+				margin-bottom: 0;
+			}
+		}
+		&-section {
+			@include breakpoint(lg) {
+				display: flex;
+			}
+		}
+	}
+	&__bottom-menu {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		color: $white;
+		font-size: 10px;
+		letter-spacing: 0.36px;
+		text-transform: uppercase;
+		&>li {
+			margin-right: 35px;
+			&:last-child {
+				margin-right: 0;	
+			}
+			&>a {
+				color: $white;
+				font-size: 10px;
+				letter-spacing: 0.36px;
+				text-transform: uppercase;
+				&:hover {
+					text-decoration: none;
+					color: $orange;	
+				}
+			}
+		}
+	}
+	.socials {
+		svg {
+			fill: $white;
+		}
+		a {
+			&:hover {
+				svg {
+					fill: rgba(255,255,255,.5);
+				}
+			}
+		}
+	}
+}
+
+

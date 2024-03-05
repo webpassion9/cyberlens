@@ -1,0 +1,145 @@
+extends includes/_app
+
+block head
+
+	- var title = 'Timeline - Cyberlens';
+	- var pageClass = 'is-page-main';
+
+
+block main
+	
+	.timeline
+		.container
+
+			.timeline__top
+			
+				.title-head Community Tools
+
+				h2 Timeline of
+					br
+					| Cyber-physical Attacks
+
+			.timeline__filter
+				.timeline__filter-block
+					.timeline__filter-title Year range
+					.timeline__filter-row
+						.select-wrap.select-wrap--year
+							select
+								option 2000
+								option 2001
+								option 2002
+								option 2003
+								option 2004
+								option 2005
+								option 2006
+								option 2007
+								option 2008
+						span.timeline__filter-sep
+						.select-wrap.select-wrap--year
+							select
+								option 2000
+								option 2001
+								option 2002
+								option 2003
+								option 2004
+								option 2005
+								option 2006
+								option 2007
+								option 2008
+				.timeline__filter-block
+					.timeline__filter-title Sort
+					div
+						.select-wrap.select-wrap--sort
+							select
+								option Newest first
+								option Oldest first
+
+			.timeline__main
+				.timeline__row
+					a(href="#popup-timeline-1" data-fancybox="timeline").timeline__item
+						.timeline__item-date March 2021
+						.timeline__item-main
+							div
+								span.news-category Targeted Attack
+							h4 US Natural Gas Operator Shuts Down for 2 Days 
+							.text-desc
+								p US natural gas compression facility shuts down for 2 days after an attack on OT. A cyber threat actor used spearphishing to obtain initial access to IT network …
+							div
+								+sprite('arrow-right-circle')
+				.timeline__row
+					a(href="#popup-timeline-2" data-fancybox="timeline").timeline__item
+						.timeline__item-date December 2020
+						.timeline__item-main
+							div
+								span.news-category Malfunction
+							h4 Soyuz Rocket Failure Linked To A Programming Error
+							.text-desc
+								p Russian rocket failed to deploy 19 satellites it was carrying. Instead of releasing them into the orbit, it …
+							div
+								+sprite('arrow-right-circle')
+				.timeline__row
+					a(href="#").timeline__item
+						.timeline__item-date May 2019
+						.timeline__item-main
+							div
+								span.news-category Targeted Attack
+							h4 “WannaCry” Ransomware Attacks
+							.text-desc
+								p More than 75,000 hospitals, government agencies and businesses as large as Fedex and PetroChina in 99 countries found their systems locked and encrypted in ..
+							div
+								+sprite('arrow-right-circle')
+				.timeline__row
+					a(href="#").timeline__item
+						.timeline__item-date September 2018
+						.timeline__item-main
+							div
+								.news-category Malfunction
+							h4 Malfunction – Fatal Military Aircraft Crash Linked To A Software Fault
+							.text-desc
+								p A military plane crash in Spain killing four crew members was probably caused by accidental deletion of files …
+							div
+								+sprite('arrow-right-circle')
+				.timeline__row
+					a(href="#").timeline__item
+						.timeline__item-date March 2018
+						.timeline__item-main
+							div
+								span.news-category Targeted Attack
+							h4 US Natural Gas Operator Shuts Down for 2 Days 
+							.text-desc
+								p US natural gas compression facility shuts down for 2 days after an attack on OT. A cyber threat actor used spearphishing to obtain initial access to IT network …
+							div
+								+sprite('arrow-right-circle')
+				.timeline__row
+					a(href="#").timeline__item
+						.timeline__item-date December 2017
+						.timeline__item-main
+							div
+								span.news-category Malfunction
+							h4 Soyuz Rocket Failure Linked To A Programming Error
+							.text-desc
+								p Russian rocket failed to deploy 19 satellites it was carrying. Instead of releasing them into the orbit, it …
+							div
+								+sprite('arrow-right-circle')
+				.timeline__row
+					a(href="#").timeline__item
+						.timeline__item-date May 2017
+						.timeline__item-main
+							div
+								span.news-category Targeted Attack
+							h4 “WannaCry” Ransomware Attacks
+							.text-desc
+								p More than 75,000 hospitals, government agencies and businesses as large as Fedex and PetroChina in 99 countries found their systems locked and encrypted in ..
+							div
+								+sprite('arrow-right-circle')
+				.timeline__row
+					a(href="#").timeline__item
+						.timeline__item-date September 2018
+						.timeline__item-main
+							div
+								span.news-category Malfunction
+							h4 Malfunction – Fatal Military Aircraft Crash Linked To A Software Fault
+							.text-desc
+								p A military plane crash in Spain killing four crew members was probably caused by accidental deletion of files …
+							div
+								+sprite('arrow-right-circle')

@@ -1,0 +1,53 @@
+//- --------------------------------------------------------------------------
+//- Access
+//- --------------------------------------------------------------------------
+
+.access {
+	background: $gray3;
+	&__row {
+		align-items: center;
+	}
+	&__form {
+		position: relative;
+		@include breakpointMax(md) {
+			margin-top: 30px;		
+		}
+		&-btn {
+			margin-top: 12px;
+			width: 100%;
+			@include breakpoint(md) {
+				width: auto;
+				position: absolute;
+				right: 5px;
+				top: 4px;
+				margin-top: 0;
+			}
+		}
+		&-success {
+			position: absolute;
+			left: 0;
+			bottom: -30px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: $orange;
+			font-family: $fontSecond;
+			font-size: 13px;
+			line-height: 1.3;
+			white-space: nowrap;
+			svg {
+				flex-shrink: 0;
+				stroke: $orange;
+				margin-right: 10px;
+			}
+		}
+		.ui-input {
+			margin-bottom: 0;
+			padding-right: 170px;
+		}
+	}
+	h3 {
+		margin-bottom: 15px;
+	}
+}

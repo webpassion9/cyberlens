@@ -1,0 +1,64 @@
+extends includes/_app
+
+block head
+
+	- var title = 'Careers - Cyberlens';
+	- var pageClass = 'is-page-main';
+
+
+block main
+	
+	.top-page.careers-top
+		.container
+			.row
+				.col-lg-8.offset-lg-2.text-center
+					.title-head Careers
+
+					h2 Our Mission.
+						br
+						| Should You Choose to Accept It
+
+					.text-desc Our team has deep expertise in cybersecurity, AI, machine learning, game theory, cryptography, security requirements analysis and risk modelling, and cyber-physical system engineering. 
+
+	.vacancies.section-white.section-default
+		.container
+			h2.h2-mod-medium Current Vacancies
+			div
+				a(href="#").vacancies__item
+					div
+						h4 Senior IT / OT Cybersecurity Engineer
+						span.vacancies__item-desc London or Remote, United Kingdom
+					span.btn.btn-arrow.btn-arrow--white
+						+sprite('arrow-right')
+
+				a(href="#").vacancies__item
+					div
+						h4 Junior Software Tester
+						span.vacancies__item-desc Eindhoven, Nerthernlands, London or Remote, United Kingdom
+					span.btn.btn-arrow.btn-arrow--white
+						+sprite('arrow-right')
+
+
+	.section-default.request
+		.container
+			.row
+				.col-md-10.offset-md-1.col-lg-8.offset-lg-2
+					h3.h3-mod-size-sec Don't see a role that fits your skills?
+					.text-desc Contact us with a general enquiry and will contact you when a position comes available we think is a good match.
+					form.form-base
+						.row
+							.col.col-12.col-md-6
+								input(type="text" placeholder="Name*").ui-input
+							.col.col-12.col-md-6
+								input(type="email" placeholder="Email*").ui-input
+							.col.col-12
+								textarea(placeholder="Message").ui-textarea
+						.row.form-base__bottom
+							.col.col-auto.order-md-2
+								label.ui-checkbox
+									input(type="checkbox" hidden)
+									span.ui-checkbox__icon
+										+sprite('check')
+									span.ui-checkbox__text Subscribe to Cyberlens security blog
+							.col.col-auto
+								input(type="submit" value="Send").btn.btn-default

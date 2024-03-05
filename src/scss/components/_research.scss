@@ -1,0 +1,38 @@
+// --------------------------------------------------------------------------
+// Research
+// --------------------------------------------------------------------------
+
+.research {
+	padding-top: 140px;
+	@include breakpoint(lg) {
+		padding-top: 200px;
+	}
+	&__slider {
+		display: flex;
+		align-items: center;
+		max-width: 100%;
+		&-main {
+			padding: 0 30px;
+			margin: 0;
+			flex-grow: 1;
+			min-width: 0;
+			.slick-track {
+				display: flex;
+				align-items: center;
+			}
+			.slick-slide {
+				text-align: center;
+			}
+		}
+	}
+	&__partners {
+		padding-top: 75px;
+		padding-bottom: 75px;
+		@include breakpoint(lg) {
+			padding-top: 130px;
+		}
+		h4 {
+			margin-bottom: 40px;
+		}
+	}
+}

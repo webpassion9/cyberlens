@@ -1,0 +1,51 @@
+// --------------------------------------------------------------------------
+// Vacancies
+// --------------------------------------------------------------------------
+
+.vacancies {
+	h2 {
+		margin-bottom: 40px;
+		@include breakpoint(lg) {
+			margin-bottom: 80px;
+		}
+	}
+	&__item {
+		min-height: 112px;
+		margin: 0 0 16px;
+		padding: 15px;
+		border-radius: 5px;
+		border: solid 1px #eaeaea;
+		background-color: #ffffff;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: $gray;
+		text-decoration: none;
+		transition: .25s;
+		@include breakpoint(lg) {
+			padding: 15px 34px 15px 31px;
+		}
+		h4 {
+			margin-bottom: 10px;
+			transition: .25s;
+		}
+		&:last-child {
+			margin-bottom: 0;	
+		}
+		&:hover {
+			text-decoration: none;
+			box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.04);
+			h4 {
+				color: $orange;
+			}
+			.btn-arrow {
+				background: #E8E8E9;
+			}
+		}
+		&-desc {
+			font-size: 15px;
+			font-family: $fontSecond;
+			color: $gray-light2;
+		}
+	}
+}

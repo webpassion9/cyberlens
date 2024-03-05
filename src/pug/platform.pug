@@ -1,0 +1,71 @@
+extends includes/_app
+
+block head
+
+	- var title = 'Platform - Cyberlens';
+	- var pageClass = 'is-page-main';
+
+
+block main
+	
+	.platform-top.top-page
+		.container
+			.text-center
+				.title-head Platform
+
+				h2 Detect More. Respond Faster.
+					br
+					| Protect Safety.
+
+			.video-wrap
+				iframe(src="https://www.youtube.com/embed/vVfzLlORKA0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+				.video-wrap__overlay
+					img(src="images/video-preview.jpg", alt="" srcset="images/video-preview@2x.jpg 2x")
+					span.video-wrap__overlay-btn
+						+sprite('play')
+			.row
+				.col-lg-8.offset-lg-2.text-center
+					h3 Retina and the cybersecurity pathway to Industry 4.0
+					.text-desc Digital transformation of systems and networks in Industry 4.0 increases their exposure to cybersecurity risks. With cyber-physical AI, learn how Retina protects safety.
+
+	.section-white.platform-safe.section-default
+		.container.text-center
+			.platform-safe__img
+				img(src="images/cap-full.png", alt="" srcset="images/cap-full@2x.png 2x")
+			
+			h3.h3-mod-size Cybersecurity drives safety.
+			.text-desc Safety drives productivity. Safety drives business.
+	
+	.section-default
+		.container
+			.row.info-block
+				.col-md-6
+					h2 Statement and Test
+					.text-desc
+						p Discovery is a graphical security analysis tool for complex networking environments. By supporting domain-specific ontologies, it can be applied in highly complex and heterogenuous environments such as, industrial control networks, 5G systems and distributed Internet of Things platforms. 
+				.col-md-6.info-block__img
+					img(src="images/cap.png", alt="" srcset="images/cap@2x.png 2x")
+
+	.request.section-default
+		.container
+			.row
+				.col-lg-8.offset-lg-2
+					h3.h3-mod-size-sec Get a Demo
+					.text-desc Contact us for a prototype demonstration of next-generation cyber-physical threat protection & response solution
+					form.form-base
+						.row
+							.col.col-12.col-md-6
+								input(type="text" placeholder="Name*").ui-input
+							.col.col-12.col-md-6
+								input(type="email" placeholder="Email*").ui-input
+							.col.col-12
+								textarea(placeholder="Message").ui-textarea
+						.row.form-base__bottom
+							.col.col-auto.order-md-2
+								label.ui-checkbox
+									input(type="checkbox" hidden)
+									span.ui-checkbox__icon
+										+sprite('check')
+									span.ui-checkbox__text Subscribe to Cyberlens security blog
+							.col.col-auto
+								input(type="submit" value="Send").btn.btn-default

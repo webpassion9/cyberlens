@@ -1,0 +1,98 @@
+extends includes/_app
+
+block head
+
+	- var title = 'Discovery tool - Cyberlens';
+	- var pageClass = 'is-page-main';
+
+
+block main
+	
+	.container
+		.top-page
+			.row.info-block
+				.col-md-6
+					.title-head Community Tools
+					h2 DiscØvery - Security analysis for IoT and 5G
+					.text-desc
+						p Discovery is a graphical security analysis tool for complex networking environments. By supporting domain-specific ontologies, it can be applied in highly complex and heterogenuous environments such as, industrial control networks, 5G systems and distributed Internet of Things platforms. 
+				.col-md-6.info-block__img
+					img(src="images/cap.png", alt="" srcset="images/cap@2x.png 2x")
+
+		.discovery-top
+			.discovery-top__img
+				img(src="images/apple-mac-book-air-13-space-grey.png", alt="" srcset="images/apple-mac-book-air-13-space-grey@2x.png 2x")
+
+			.row
+				.col-lg-8.offset-lg-2
+					h3.h3-mod-size Reduce the cost of security monitoring
+						br
+						| by centralising the process
+					.text-desc
+						p Discovery is a graphical security analysis tool for complex networking environments. By supporting domain-specific ontologies, it can be applied in highly complex and heterogenuous environments such as, industrial control networks, 5G systems and distributed Internet of Things platforms. 
+		.discovery-blocks
+			h2 Powerful graph-based algorithms
+
+			.row.info-block.info-block--reverse
+				.col-12.col-md-6.info-block__main
+					h3 Detecting network and system threats in complex distributed environments
+					.text-desc
+						p By supporting domain-specific ontologies, it can be applied in highly complex and heterogenuous environments such as, industrial control networks, 5G systems and distributed Internet of Things platforms.
+				.col-12.col-md-6.info-block__img
+					img(src="images/space-gray.jpg", alt="" srcset="images/space-gray@2x.jpg 2x")
+			.row.info-block
+				.col-12.col-md-6.info-block__main
+					h3 Remotely and automatically identifying vulnerabilities
+					.text-desc
+						p By supporting domain-specific ontologies, it can be applied in highly complex and heterogenuous environments such as, industrial control networks, 5G systems and distributed Internet of Things platforms. 
+				.col-12.col-md-6.info-block__img
+					img(src="images/space-gray.jpg", alt="" srcset="images/space-gray@2x.jpg 2x")
+			.row.info-block.info-block--reverse
+				.col-12.col-md-6.info-block__main
+					h3 Provision of tailored reports, which are suggestions based
+					.text-desc
+						p By supporting domain-specific ontologies, it can be applied in highly complex and heterogenuous environments such as, industrial control networks, 5G systems and distributed Internet of Things platforms.
+				.col-12.col-md-6.info-block__img
+					img(src="images/space-gray.jpg", alt="" srcset="images/space-gray@2x.jpg 2x")
+			.row.info-block
+				.col-12.col-md-6.info-block__main
+					h3 Visualising holistically the complete threat landscape
+					.text-desc
+						p By supporting domain-specific ontologies, it can be applied in highly complex and heterogenuous environments such as, industrial control networks, 5G systems and distributed Internet of Things platforms.
+				.col-12.col-md-6.info-block__img
+					img(src="images/space-gray.jpg", alt="" srcset="images/space-gray@2x.jpg 2x")
+
+	.innovations.section-default.section-white
+		.container
+			h2.h2-mod-medium The above innovations allow an organisation
+				br
+				| leveraging Discovery to:
+			.row
+				.col-md-6.innovations__item
+					.innovations__item-icon
+						+sprite('reduce-the-attack')
+					h3 Reduce the attack surface
+					.text-desc
+						p Reduce the attack surface of their infrastructure by identifying security issues that result from their hardware, software, network topologies, as well as in-house policies and interdependencies with third parties 
+				.col-md-6.innovations__item
+					.innovations__item-icon
+						+sprite('reduce-the-cost')
+					h3 Reduce the cost of security monitoring
+					.text-desc
+						p Reduce the cost of security monitoring by centralising the process
+
+	.access.section-default
+		.container
+			.row.access__row
+				.col-md-6
+					h3.h3-mod-size-sec Get Access to DiscØvery
+					.text-desc Leave your email address to download the latest version
+				.col-md-6
+					form.access__form
+						input(type="text" placeholder="Email").ui-input.ui-input--subscribe
+						input(type="submit" value="Get Access").btn.btn-default.access__form-btn
+						
+						// visible on success
+						.access__form-success 
+							+sprite('check')
+							| Check your email to get access to DiscØvery 

@@ -1,0 +1,95 @@
+// --------------------------------------------------------------------------
+// Sprite Auto Generated
+// --------------------------------------------------------------------------
+
+@import '../sprites/_spritesSvg'; 
+
+// --------------------------------------------------------------------------
+// Config
+// --------------------------------------------------------------------------
+
+$fontBase: 'Open Sauce One', Helvetica, Arial, sans-serif;
+$fontSecond: 'Inter', Helvetica, Arial, sans-serif;
+
+
+// Grid
+$xs: 320px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$hd: 1600px;
+
+// --------------------------------------------------------------------------
+// Base
+// --------------------------------------------------------------------------
+
+@import 'base/_mixins';
+@import 'base/_colors';
+@import 'base/_normalize';
+@import 'base/_typography';
+@import 'base/_elements';
+@import 'base/_icons';
+@import 'base/_fonts';
+@import 'base/_extends';
+@import 'base/_forms';
+@import 'base/_buttons';
+@import 'base/_lists';
+@import 'base/_tables';
+@import 'base/_figures';
+@import 'base/_wysiwyg';
+
+// --------------------------------------------------------------------------
+// Plugins
+// --------------------------------------------------------------------------
+
+@import 'plugins/_slick';
+@import "plugins/_selectize";
+@import "plugins/_perfect-scrollbar";
+@import "plugins/_fancybox";
+
+// --------------------------------------------------------------------------
+// Components
+// --------------------------------------------------------------------------
+
+@import 'components/_common';
+
+@import 'components/_start-slide';
+@import 'components/_news';
+@import 'components/_news-feed';
+@import 'components/_about';
+@import 'components/_article';
+@import 'components/_projects';
+@import 'components/_innovations';
+@import 'components/_access';
+@import 'components/_timeline';
+@import 'components/_platform';
+@import 'components/_vacancies';
+@import 'components/_team';
+@import 'components/_research';
+@import 'components/_discovery';
+@import 'components/_careers';
+@import 'components/_info-block';
+
+@import 'components/_tabs-menu';
+
+@import 'components/_popups';
+
+// --------------------------------------------------------------------------
+// Layout
+// --------------------------------------------------------------------------
+
+@import 'layout/_grid';
+@import 'layout/_layout';
+@import 'layout/_header';
+@import 'layout/_main';
+@import 'layout/_footer';
+
+// --------------------------------------------------------------------------
+// States
+// --------------------------------------------------------------------------
+
+@import 'states/_states';
+
+

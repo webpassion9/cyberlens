@@ -1,0 +1,114 @@
+//- --------------------------------------------------------------------------
+//- Platform
+//- --------------------------------------------------------------------------
+
+
+.platform-top {
+	background: url(../images/platform-bg.jpg) no-repeat center 0;
+	background-size: 100% auto;
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		background: url(../images/platform-bg@2x.jpg) no-repeat center 0;
+		background-size: 100% auto;
+	}
+
+	.title-head {
+		margin-bottom: 30px;
+		@include breakpoint(lg) {
+			margin-bottom: 50px;
+		}
+	}
+	h2 {
+		margin-bottom: 40px;
+		 @include breakpoint(lg) {
+		 	margin-bottom: 125px;
+		 }
+	}
+}
+
+.video-wrap {
+	height: 230px;
+	max-width: 500px;
+	margin: 0 auto 40px;
+	background: #000;
+	position: relative;
+	border-radius: 7px;
+	overflow: hidden;
+	@include breakpoint(lg) {
+		max-width: 928px;
+		height: 520px;
+		margin: 0 auto 65px;
+	
+	}
+	iframe {
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+
+	&__overlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 10;
+
+		transition: 1s;
+
+		cursor: pointer;
+		
+		&>img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+
+		&-btn {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 70px;
+			height: 70px;
+			transform: translate(-50%,-50%);
+			background: $orange;
+			border-radius: 100%;
+
+			transition: .25s;
+			
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			
+			@include breakpoint(md) {
+				width: 96px;
+				height: 96px;
+			}
+
+		}
+
+		&:hover {
+			.video-wrap__overlay {
+				&-btn {
+					background: #ff7847;
+				}
+			}
+		}
+	}
+}
+
+.platform-safe {
+	&__img {
+		margin-bottom: 40px;
+		@include breakpoint(lg) {
+			margin-bottom: 90px;
+		}
+	}
+}
+
+.request {
+	background: $gray3;
+	.text-desc {
+		margin-bottom: 45px;
+	}
+}
+

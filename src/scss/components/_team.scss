@@ -1,0 +1,95 @@
+// --------------------------------------------------------------------------
+// Team
+// --------------------------------------------------------------------------
+.team {
+	h2 {
+		margin-bottom: 30px;
+	}
+	.text-desc {
+		margin-bottom: 30px;
+		@include breakpoint(lg) {
+			margin-bottom: 60px;
+		}
+	}
+	&__items {
+		padding-top: 30px;
+		@include breakpoint(lg) {
+			padding-top: 95px;
+		}
+		&-row {
+			margin-bottom: -30px; /*equal for .col margin-bottom*/
+			@include breakpoint(lg) {
+				margin-bottom: -60px;
+			
+			}
+			.col {
+				margin-bottom: 30px;
+				@include breakpoint(lg) {
+					margin-bottom: 60px;
+				}
+			}
+		}
+	}
+	&__item {
+		color: $gray2;
+
+		&-full-overlay {
+			opacity: 0;
+			visibility: hidden;
+			position: absolute;
+			z-index: 10;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 11px;
+			text-transform: uppercase;
+			line-height: 1;
+			letter-spacing: 0.9px;
+			color: $white;
+			background: rgba($gray, .7);
+			transition: .25s;
+		}
+		
+		&-img {
+			position: relative;
+			margin-bottom: 20px;
+			max-height: 352px;
+			overflow: hidden;
+			text-align: center;
+			line-height: 0;
+			img {
+				object-fit: cover;
+				width: 100%;
+			}
+		}
+		&-desc {
+			font-family: $fontSecond;
+			font-size: 15px;
+			line-height: 24px;
+			color: $gray-light2;
+		}
+		h4 {
+			margin-bottom: 4px;
+			transition: .25s;
+		}
+
+		&:hover {
+			text-decoration: none;
+			h4 {
+				color: $orange;
+			}
+			.team {
+				&__item {
+					&-full-overlay {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+		}
+	}
+}

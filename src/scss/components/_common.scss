@@ -1,0 +1,121 @@
+//- --------------------------------------------------------------------------
+//- Common
+//- --------------------------------------------------------------------------
+
+.top-page {
+	padding-top: 100px;
+	padding-bottom: 50px;
+	@include breakpoint(lg) {
+		padding-top: 200px;
+		padding-bottom: 155px;
+	}
+	.title-head {
+		margin-bottom: 20px;
+		@include breakpoint(lg) {
+			margin-bottom: 45px;
+		}
+	}
+	h2 {
+		margin-bottom: 20px;
+		@include breakpoint(lg) {
+			margin-bottom: 35px;
+		}
+	}
+}
+
+.section-white {
+	background: $white;
+	color: $gray2;
+	.news__item {
+		h4 {
+			a {
+				color: $gray2;
+			}
+		}
+	}
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 60px;
+	position: relative;
+	z-index: 100;
+	&__link {
+		width: 35px;
+		height: 35px;
+		margin: 0 5px;
+		border-radius: 100%;
+		color: $gray2;
+		font-size: 14px;
+		line-height: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		transition: .25s;
+		@include breakpoint(md) {
+			width: 44px;
+			height: 44px;
+			margin: 0 10px;
+			font-size: 15px;
+		}
+		&:hover {
+			background: rgba($gray, .1);
+			text-decoration: none;
+		}
+		&.current {
+			background: $gray;
+			color: $white;
+		}
+	}
+	&__dots {
+		@extend .pagination__link;
+		cursor: default;
+	}
+	.arrow-right {
+		fill: none;
+		stroke: $gray2;
+	}
+
+	.arrow-left {
+		fill: none;
+		stroke: $gray2;
+	}
+}
+
+
+.socials {
+	display: inline-flex;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	&>li {
+		margin-right: 18px;
+		&:last-child {
+			margin-right: 0;	
+		}
+		svg {
+			transition: .25s;
+		}
+		a {
+			&:hover {
+				svg {
+					fill: $gray;
+				}
+			}
+		}
+	}
+}
+
+.section-default {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	@include breakpoint(lg) {
+		padding-top: 140px;
+		padding-bottom: 140px;
+	}
+}
+
